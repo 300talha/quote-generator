@@ -5,57 +5,68 @@
   <style>
     /* Move CSS styles to a separate CSS file */
     /* Add some additional styling for the button hover effect */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-    }
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
 
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 20px;
-    }
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
 
-    h1 {
-      color: #333;
-    }
+h1 {
+  color: #333;
+}
 
-    .quote {
-      margin-bottom: 20px;
-    }
+.quote {
+  margin-bottom: 20px;
+}
 
-    #quoteText {
-      font-size: 24px;
-    }
+#quoteText {
+  font-size: 24px;
+  font-weight: bold;
+}
 
-    #quoteAuthor {
-      font-style: italic;
-    }
+#quoteAuthor {
+  font-style: italic;
+  margin-top: 10px;
+}
 
-    #newQuoteBtn {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+#newQuoteBtn,
+#shareBtn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
 
-    #newQuoteBtn:hover {
-      background-color: #555;
+#newQuoteBtn:hover,
+#shareBtn:hover {
+  background-color: #555;
+}
+
+#shareBtn {
+  background-color: #4caf50;
+  margin-left: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+<div class="container">
     <h1>Quote Generator</h1>
     <div class="quote">
       <p id="quoteText"></p>
       <p id="quoteAuthor"></p>
     </div>
     <button id="newQuoteBtn">New Quote</button>
+    <button id="shareBtn">Share</button>
   </div>
 
   <script>
