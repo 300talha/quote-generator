@@ -1,86 +1,42 @@
-/* styles.css */
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
 .container {
   max-width: 600px;
   margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
+  padding: 40px 20px;
 }
 
 h1 {
   color: #333;
-  margin-top: 0;
 }
 
-.quote {
+.quote-container {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#quote {
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
-#quoteText {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-#quoteAuthor {
-  font-style: italic;
-  margin-top: 10px;
-}
-
-#newQuoteBtn,
-#shareBtn {
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 20px;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.3s, transform 0.3s;
-}
-
-#newQuoteBtn:hover,
-#shareBtn:hover {
-  animation: buttonHover 0.3s ease-in-out forwards;
-}
-
-@keyframes buttonHover {
-  0% {
-    background-color: #333;
-    transform: scale(1);
-  }
-  50% {
-    background-color: #555;
-    transform: scale(1.1);
-  }
-  100% {
-    background-color: #555;
-    transform: scale(1);
-  }
-}
-
-#shareBtn {
+#generateBtn {
   background-color: #4caf50;
-  margin-left: 10px;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-@keyframes buttonBounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
+#generateBtn:hover {
