@@ -3,6 +3,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -10,10 +12,12 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 h1 {
   color: #333;
+  margin-top: 0;
 }
 
 .quote {
@@ -41,6 +45,7 @@ h1 {
   margin-top: 20px;
   position: relative;
   overflow: hidden;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 #newQuoteBtn:hover,
@@ -68,7 +73,6 @@ h1 {
   margin-left: 10px;
 }
 
-
 @keyframes buttonBounce {
   0% {
     transform: translateY(0);
@@ -81,3 +85,29 @@ h1 {
   }
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #quoteText {
+    font-size: 20px;
+  }
+
+  #quoteAuthor {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  #newQuoteBtn,
+  #shareBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+}
